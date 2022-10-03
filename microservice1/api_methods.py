@@ -1,6 +1,6 @@
 import bleach
 from validate_email_address import validate_email
-
+from microservice1 import redis_service
 
 def create_response_to_user(email):
     return_message = f"Hello, {email}.We have recieved your complaint, and will get in touch with you within 24 hours. This is an auto generated message.".format(email)
@@ -24,6 +24,7 @@ def handle_user_complaint(data):
         validate_user_email(data["email"])
         sanitize_user_subject(data["subject"])
         sanitize_user_complaint(data["complaint"])
+        redis_service.send_messages_to_redis(data)
     except Exception as e:
         return "Following error occured: " + str(e)
         
