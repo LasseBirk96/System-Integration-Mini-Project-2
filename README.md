@@ -44,6 +44,9 @@ Microservice2 has the job of dequeueing these messages and sending them to the c
 And finally this is what it looks like when a complaint has landed at the cooperate e-mail.
 <img width="1055" alt="Screenshot 2022-10-05 at 15 16 08" src="https://user-images.githubusercontent.com/56427491/194069510-63aa2628-fcd5-4b09-9094-54d87900403d.png">
 
+From here it is a manual process for the company to look at a complaint and respond to the user.
+
+
 ## Own thoughts
 This assignment was a bit of a rush job. There are a lot of things that could have been done better, and quite frankly should have been done better.
 I am not all that satisfied with how it turned out, but it is what it is. Originally the system was supposed to be bigger and could handle different types of complaints and send them to different departments, but i forgot all about the assignment and had to create a light version of that idea. I am also very unsure if i had to use Camunda or not and what purposed it served.
