@@ -34,7 +34,7 @@ If all looks good, they are greeted with an auto-reply message.
 The complaint is then send to Redis. The idea here being that instead of a complaint going directly to the company email, we wait for more complaints to pile up before we send them. So Redis acts as our message queue.
 
 
-Microservice2 has the job of dequeueing these messages and sending them to the company email. This occurs automatically every morning at 5:00. A cron job has been create to ensure this. 
+Microservice2 has the job of dequeueing these messages and sending them to the company email. This occurs automatically every morning at 5:00. A cron job has been created to ensure this. 
 
 
 <img width="332" alt="Screenshot 2022-10-05 at 15 14 45" src="https://user-images.githubusercontent.com/56427491/194069215-6e16e13d-8282-4e05-8bd8-a7dfe011f2f4.png">
